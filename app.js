@@ -12,7 +12,7 @@ const usersRouter = require('./routes/users');
 const catalogRouter = require('./routes/catalog')
 
 const app = express();
-const dev_db_url = 'mongodb+srv://bill:a1s2sd3@cluster0.kq78u11.mongodb.net/?retryWrites=true&w=majority;'
+const dev_db_url = 'mongodb+srv://bill:a1s2d3@cluster0.kq78u11.mongodb.net/?retryWrites=true&w=majority;'
 const mongoDB = process.env.MONGODB_URI || dev_db_url
 const db = mongoose.connection
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
